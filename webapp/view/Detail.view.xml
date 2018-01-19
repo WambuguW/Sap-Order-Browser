@@ -33,7 +33,7 @@
 							</items>
 						</Table>
 					</IconTabFilter>
-					<IconTabFilter id="iconTabBarFilter2" icon="sap-icon://customer-and-contacts" tooltip="{i18n>detailIconTabBarCustomerDetails}" text="Billing Info">
+					<IconTabFilter id="iconTabBarFilter2" icon="sap-icon://monitor-payments" tooltip="{i18n>detailIconTabBarCustomerDetails}" text="Billing Info">
 						<content>
 							<core:Fragment xmlns:core="sap.ui.core" fragmentName="saplike.saplike.view.DetailPageCustomerInfo" type="XML" id="__fragment0__customerDetailsFragment"/>
 						</content>
