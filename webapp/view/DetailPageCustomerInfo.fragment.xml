@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns="sap.m">
+	<l:Grid defaultSpan="L12 M12 S12" id="customerDetailsFragment" width="auto">
+		<l:content>
+			<f:SimpleForm columnsL="1" columnsM="1" editable="false" emptySpanL="4" emptySpanM="4" labelSpanL="3" labelSpanM="3" layout="ResponsiveGridLayout" maxContainerCols="2" minWidth="1024" title="{i18n>tab_billingDetails}">
+				<f:content>
+					<Label text="{i18n>label_billingStatus}"/>
+					<Text text="{BillingStatus}"/>
+					<Label text="{i18n>label_billingStatusDesc}"/>
+					<Text text="{BillingStatusDescription}"/>
+					<Label text="{i18n>label_globalCurrency}"/>
+					<Text text="{i18n>currencySymbol}"/>
+				</f:content>
+			</f:SimpleForm>
+		</l:content>
+	</l:Grid>
+</core:FragmentDefinition>

@@ -1,0 +1,103 @@
+{
+  "projectType": [
+    "sap.watt.uitools.ide.fiori",
+    "com.watt.common.builder.sapui5clientbuild",
+    "com.sap.webide.hybrid.cordova"
+  ],
+  "build": {
+    "targetFolder": "dist",
+    "sourceFolder": "webapp",
+    "excludedFolders": [
+      "test"
+    ],
+    "excludedFiles": [
+      "test.html"
+    ],
+    "buildRequired": false,
+    "lastBuildDateTime": "Fri, 19 Jan 2018 12:54:47 GMT"
+  },
+  "dataBinding": {
+    "/webapp/view/App.view.xml": {
+      "entitySet": "UNBINDKEY"
+    },
+    "/webapp/view/NotFound.view.xml": {
+      "entitySet": "UNBINDKEY"
+    },
+    "/webapp/view/DetailObjectNotFound.view.xml": {
+      "entitySet": "UNBINDKEY"
+    },
+    "/webapp/view/DetailNoObjectsAvailable.view.xml": {
+      "entitySet": "UNBINDKEY"
+    },
+    "/webapp/view/Master.view.xml": {
+      "entitySet": "SalesOrderCollection"
+    },
+    "/webapp/view/Detail.view.xml": {
+      "entitySet": "SalesOrderCollection"
+    },
+    "/webapp/view/DetailPageCustomerInfo.fragment.xml": {
+      "entitySet": "/SalesOrderCollection"
+    }
+  },
+  "generation": [
+    {
+      "templateId": "sap.ui.ui5-template-plugin.2masterdetail",
+      "templateVersion": "1.50.7",
+      "dateTimeStamp": "Wed, 17 Jan 2018 21:24:28 GMT"
+    }
+  ],
+  "translation": {
+    "translationDomain": "02",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "mockpreview": {
+    "mockUri": "/GWDEMO/sap/opu/odata/IWBEP/GWDEMO/",
+    "metadataFilePath": "localService/metadata.xml",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "basevalidator": {
+    "services": {
+      "xml": "fioriXmlAnalysis",
+      "js": "fioriJsValidator"
+    }
+  },
+  "codeCheckingTriggers": {
+    "notifyBeforePush": true,
+    "notifyBeforePushLevel": "Error",
+    "blockPush": false,
+    "blockPushLevel": "Error"
+  },
+  "hybrid": {
+    "backendDestination": "SAP_like",
+    "hatVersion": "1.28.0",
+    "appNamespace": "saplike",
+    "oDataConfigs": [
+      {
+        "hybridOdata": {
+          "name": "mainService",
+          "serviceUrl": ""
+        },
+        "originOdata": {
+          "name": "mainService",
+          "serviceUrl": "/GWDEMO/sap/opu/odata/IWBEP/GWDEMO/"
+        }
+      }
+    ],
+    "FacadeConfig": {
+      "cordova-plugin-device-orientation": false,
+      "accelerometer": {},
+      "compass": {},
+      "bFacade": true
+    }
+  },
+  "hcpdeploy": {
+    "account": "p1942763079trial",
+    "name": "salesorderbrowser",
+    "lastVersionWeTriedToDeploy": "1.0.0"
+  }
+}
